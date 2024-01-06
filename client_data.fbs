@@ -1,0 +1,29 @@
+namespace Clnt; 
+
+table Person {	//name used as key
+	age:short;		
+	weight:float;
+	gender:bool;	// 0 for Male, 1 for Female
+}
+
+table Group {	//name used as key
+	avg_age:float;
+	avg_weight:float;
+	participant_namelist:[string];
+}
+
+union Client_Type {		//choice of client type
+	Person,			
+	Group
+}
+
+table Client {
+	name:string(required, key);	//name declared as key
+	type:Client_Type;
+}
+
+table Clients {				
+	clients:[Client];
+}
+
+root_type Clients;
