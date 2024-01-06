@@ -28,10 +28,10 @@ for i in range(clients.ClientsLength()):
 		print('Age: ', person.Age())
 		print('Weight: ', person.Weight())
 		print('Gender: ', end='') 
-		if person.Gender() == True: 
-			print('Female')
-		else:
+		if person.IsMale() == True: 
 			print('Male')
+		else:
+			print('Female')
 
 	elif clients.Clients(i).TypeType() == Clnt.Client_Type.Client_Type().Group:
 		group = Clnt.Group.Group()
