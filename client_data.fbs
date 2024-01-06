@@ -3,7 +3,7 @@ namespace Clnt;
 table Person {	//name used as key
 	age:short;		
 	weight:float;
-	isMale:bool;	// Gender
+	ismale:bool;	// Gender
 }
 
 table Group {	//name used as key

@@ -16,10 +16,10 @@ int main()
 	auto client_one_name = builder.CreateString("Ram");
 	short client_one_age = 21;
 	float client_one_weight = 76.5;
-	bool client_one_gender = 0; // 0 for Male, 1 for Female
+	bool client_one_isMale = 0; // 0 for Male, 1 for Female
 
     //Creating Client 1
-	auto client_one_person = CreatePerson(builder, client_one_age, client_one_weight, client_one_gender);
+	auto client_one_person = CreatePerson(builder, client_one_age, client_one_weight, client_one_isMale);
 	auto client_one = CreateClient(builder, client_one_name, Client_Type_Person, client_one_person.Union());
 
 	//Client 2	

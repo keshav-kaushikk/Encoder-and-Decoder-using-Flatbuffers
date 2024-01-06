@@ -18,7 +18,7 @@ clients = Clnt.Clients.Clients.GetRootAsClients(data, 0)
 for i in range(clients.ClientsLength()):
 	
 	# Printing Clients
-	print('Client number: ',i+1)
+	print('Client number: ', i+1)
 	print('Name: ', clients.Clients(i).Name().decode('utf-8')) 
 	
 
@@ -28,7 +28,7 @@ for i in range(clients.ClientsLength()):
 		print('Age: ', person.Age())
 		print('Weight: ', person.Weight())
 		print('Gender: ', end='') 
-		if person.IsMale() == True: 
+		if person.Ismale() == True: 
 			print('Male')
 		else:
 			print('Female')
